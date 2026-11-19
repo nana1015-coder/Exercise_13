@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Exercise 13 - CSS Transitions</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+padding: 40px;
+}
+
+.box {
+width: 100px;
+height: 100px;
+background-color: #e9a3a8;
+color: #333;
+font-weight: bold;
+padding: 6px;
+box-sizing: border-box;
+margin-bottom: 30px;
+}
+
+/* Square 1: hover 時變長（只拉長 width） */
+.square1 {
+transition: width 0.5s ease;
+}
+
+.square1:hover {
+width: 450px;
+}
+
+/* Square 2: hover 時變大（width 和 height 一起變大） */
+.square2 {
+transition: width 0.5s ease, height 0.5s ease;
+}
+
+.square2:hover {
+width: 160px;
+height: 160px;
+}
+</style>
+</head>
+<body>
+
+<div class="box square1">1</div>
+<div class="box square2">2</div>
+
+</body>
+</html>
